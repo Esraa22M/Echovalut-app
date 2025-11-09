@@ -1,9 +1,9 @@
 import { StatusBar } from "expo-status-bar";
-
 import { useEffect, useCallback, useState } from "react";
 import { setupFonts } from "./src/infastructure/config/setup-fonts";
-import * as SplashScreen from "expo-splash-screen";
-
+import * as Splash from "expo-splash-screen";
+import { View } from "react-native";
+import {SplashScreen} from "./src/features/splash-screen/screens/SplashScreen";
 export default function App() {
 	const [ready, setReady] = useState(false);
 	useEffect(() => {
@@ -15,15 +15,16 @@ export default function App() {
 	}, []);
 	const onLayoutRootView = useCallback(async () => {
 		if (ready) {
-			await SplashScreen.hideAsync();
+			await Splash.hideAsync();
 		}
 	}, [ready]);
 
 	if (!ready) return null;
 
 	return (
-		<View onLayout={onLayoutRootView}>
-			<StatusBar style="auto" />{" "}
+		<View onLayout={onLayoutRootView} style={{ flex:1, backgroundColor:"red"}}>
+		<SplashScreen />
+			<StatusBar style="auto" />
 		</View>
 	);
 }
