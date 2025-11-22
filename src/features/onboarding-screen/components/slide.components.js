@@ -3,7 +3,6 @@ import { theme } from "../../../infastructure/theme";
 const { width, height } = Dimensions.get("screen");
 export const Slide = ({ item }) => {
 	const LogoComponent = item.Logo;
-	console.log(LogoComponent);
 	return (
 		<View style={styles.itemContainer}>
 			<View style={styles.slideWrapper}>
