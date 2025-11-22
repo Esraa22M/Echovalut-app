@@ -3,7 +3,8 @@ import { useEffect, useCallback, useState } from "react";
 import { setupFonts } from "./src/infastructure/config/setup-fonts";
 import * as Splash from "expo-splash-screen";
 import { View } from "react-native";
-import {SplashScreen} from "./src/features/splash-screen/screens/SplashScreen";
+import {SplashScreen} from "./src/features/splash-screen/screens/Splash.screens";
+import { OnboardingScreen } from "./src/features/onboarding-screen/screens/onboarding.screens";
 export default function App() {
 	const [ready, setReady] = useState(false);
 	useEffect(() => {
@@ -23,7 +24,7 @@ export default function App() {
 
 	return (
 		<View onLayout={onLayoutRootView} style={{ flex:1, backgroundColor:"red"}}>
-		<SplashScreen />
+		<OnboardingScreen />
 			<StatusBar style="auto" />
 		</View>
 	);

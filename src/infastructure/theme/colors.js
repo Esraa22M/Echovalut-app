@@ -17,7 +17,8 @@ export const colors = {
 	},
 	bg: {
 		primary: "hsla(250, 80%, 66%, 0.8)",
-		secondary: "#FAFAFA",
+		secondary: "rgba(250, 250, 250, 0.3)",
 		neutral: "#D9D9D9",
 	},
+	 onBoardingbgs : ['#9956DE','#1FA7E1', '#9956DE', '#1FA7E1',"#9956DE","#1FA7E1"]
 };

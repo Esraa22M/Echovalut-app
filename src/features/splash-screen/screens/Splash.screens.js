@@ -2,7 +2,7 @@ import { View, Image, StyleSheet, Text, Button } from "react-native";
 import { useState } from "react";
 import { theme } from "../../../infastructure/theme";
 import AnimatedTyping from "../components/animated-typing.components";
-import { AnimatingCircle } from "../components/animating-circle";
+import { AnimatingCircle } from "../components/animating-circle.components";
 export const SplashScreen = () => {
 	const [showText , setShowText]=useState(false);
 	return (

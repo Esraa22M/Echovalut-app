@@ -1,7 +1,7 @@
 export const layout = {
   lineHeights: {
-    title: "28",
-    copy: "20",
+    title: 28,
+    copy: 20,
   },
-  space: ["0", "4", "8px", "16", "32", "64"],
+  space: [0, 4, 8, 16, 32, 64],
 };
